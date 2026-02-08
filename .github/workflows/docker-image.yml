@@ -27,6 +27,6 @@ jobs:
         password: ${{ secrets.DOCKER_TOKEN }}
         
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag longtortue/dsci310-ia3-LongTortue-docker:latest
+      run: docker build . --file Dockerfile --tag longtortue/dsci310-ia3-longtortue-docker:latest
     - name: Push the Docker image
-      run: docker push longtortue/dsci310-ia3-LongTortue-docker:latest
+      run: docker push longtortue/dsci310-ia3-longtortue-docker:latest
